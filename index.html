@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" border="0">
+                    </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#serv">Cars</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div id="black">
+            
+        <h1 class="heading-primary center">
+            Welcome to Car Website
+        </h1>
+        <p class="center">WELCOME AUTO CENTRE is popularly known as WELCOM AUTO CENTRE. It is a Partnership with its office registered in Delhi . The company carries out its major operations from Delhi.
+</p>
+
+            <button class="btn" type="submit" id="str"><a href="https://www.mastersindia.co/gst-search/?name=welcome-auto-centre&gstin=07AAAFW3849D1Z7">View more</a></button>
+        </div>
+    </section>
+    
+    <section id="serv">
+        <h1 class="heading-primary center">Cars</h1>
+        <div id="services">
+        
+            <div class="servBox" id="servBox1">
+                <h2 class="heading-secondary">Lamborghini</h2>
+                <img src="https://images.unsplash.com/photo-1617650728468-8581e439c864?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+                <p class="center">Automobili Lamborghini was officially established in 1963 in Sant'Agata Bolognese, Italy, and the same year debuted its first car, the Lamborghini 350 GTV, a two-seater coupe with a V12 engine. The company's logo featured a bull, a reference to Ferruccio Lamborghini's zodiac sign, Taurus the bull.</p>
+                
+            </div>            
+            <div class="servBox" id="servBox2">
+                <h2 class="heading-secondary">Subaru</h2>
+                <img src="https://images.unsplash.com/photo-1613467018200-5e2522493b64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1569&q=80">
+                <p class="center">Japanese automaker Subaru is an automotive brand known for making all-wheel drive standard across most of its lineup, including the Impreza, Crosstrek, and Ascent. Many of its vehicles also get solid safety ratings. Subaru competes with Honda, Mazda, and Toyota.</p>
+                
+            </div>            
+            <div class="servBox" id="servBox3">
+                <h2 class="heading-secondary">BMW</h2>
+                <img src="https://images.unsplash.com/photo-1617531653520-4893f7bbf978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80">
+                <p class="center">BMWs deliver sheer driving pleasure
+
+                    There are few cars who can take you from 0 to 100 kph in a matter of seconds; BMW is one of them. BMW satisfies the need for speed without compromising driving control and safety; each model comes with top-of-the-line brake and traction systems.</p>      
+            </div>            
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="heading-primary center">
+            Contact Us
+        </h1>
+        <div class="form">
+            
+        <form name="submit-to-google-sheet">
+        <img src="https://i.imgur.com/vlh1PYt.png" />
+            
+            <input type="text" name="Name" id="name" class="element" placeholder="Name"/><br />
+            
+            <input type="email" name="Email" id="Email" class="element" placeholder="Email"/><br />
+
+            <textarea name="Massage" id=feedback rows="8" cols="20" class="element" placeholder="Massage"></textarea>         
+            <input type="submit" name="submit" id="submit"
+            class="btn"/>
+        </form>
+        <span id="msg"></span>
+        </div>
+    </section>
+    <footer>
+        <div id="foot" class="center">
+            <ul id="about" class="flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <ul class="flex" id="follow">
+                <li class="bold">Follow us</li><br />
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+            <hr />
+            <ul id="policy" class="flex">
+                <li><a href="#">F.A.Q.</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p>&copy; All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function openmenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        // const scriptURL = 'https://script.google.com/macros/s/AKfycbzXGmxeJX6C987fNzjYtZFVuHntvYSNXAlyEKJUSURiNUVZUKnYnZF1YjAfSrz8rarj/exec'
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzQeHxDVcxhuUwJLAF5M9N-yHO8zHWxErEC0SQGB-Zz4gIPGtQ6B6etscdb6KxgIxZF/exec'
+
+        const form = document.forms['submit-to-google-sheet']
+      
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Massage sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
